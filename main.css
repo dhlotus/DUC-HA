@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif ;
 }
-
+h3{
+    font-size: 21px;
+    font-family: 'Times New Roman', Times, serif;
+}
 h1{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 13, 13);
@@ -46,15 +49,10 @@ body{
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
-    background-image: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png);
-    background-size: cover;
+    /* background-image: url(https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png); */
+    /* background-size: cover; */
 }
 /* Thiết lập cơ bản */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     display: flex;
@@ -71,9 +69,10 @@ body {
     width: 90%;
     max-width: 400px;
     padding: 20px;
-    background-color: black;
+    background-image: linear-gradient(pink, rgb(163, 117, 163), rgb(11, 110, 156));
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 /* Avatar */
@@ -105,5 +104,9 @@ p {
 }
 
 .link:hover {
-    background-color: #45a049;
+    background-color: #ff8800;
+}
+.tich{
+    color: rgb(0, 47, 255);
+    display: inline;
 }
