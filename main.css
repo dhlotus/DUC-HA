@@ -83,11 +83,13 @@ body {
     margin-bottom: 10px;
 }
 .social-logo {
-    
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng của container */
+    height: auto; /* Tự động điều chỉnh chiều cao để giữ tỷ lệ khung hình */
+    margin-left: 0; /* Không tạo khoảng cách giữa liên kết và logo */
     position: relative;
     top: 10px;
     bottom: 10px;
-    width: 30px; /* Đặt chiều rộng của logo */
+    width: 30px; /*Đặt chiều rộng của logo */
     height: auto; /* Tự động điều chỉnh chiều cao */
     margin-left: 0px; /* Tạo khoảng cách giữa liên kết và logo */
     vertical-align: middle; /* Căn giữa logo với văn bản */
