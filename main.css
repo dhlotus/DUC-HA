@@ -13,7 +13,7 @@ h3{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
 }
-.head{
+/* .head{
     color: var(--clr-neon);
     font-family: "Balsamiq Sans";
     font-size: 2.4rem;
@@ -69,8 +69,8 @@ h3{
 }
 .head:hover::before{
     opacity: 1;
-}
-/* h1{
+} */
+h1{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(128, 26, 26);
     text-align: center;
@@ -92,7 +92,7 @@ h1::before{
     border-right: 3px solid gray;
     overflow: hidden;
     
-} */
+}
 @keyframes buiha {
         0% {
             width: 0%;
@@ -106,18 +106,21 @@ h1::before{
 }
 
 /*  */
+
 body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    /* background-image: url(https://img.freepik.com/free-vector/gradient-blur-pink-blue-abstract-background_53876-117324.jpg); */
-    background-color: #001414;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    width: 100%;
+    padding: 50px 20px;
+    background: linear-gradient(45deg, #ff4b5c, #4b59f7, #1da1f2, #0077b5, #ff4500);
+    background-size: 400% 400%;
+    animation: gradientAnimation 7s ease infinite;
 }
+  
+  /* Gradient Animation */
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 /* Thiết lập cơ bản */
 
 body {
