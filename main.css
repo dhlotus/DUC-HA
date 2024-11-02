@@ -110,7 +110,7 @@ h1::before{
 body{
     width: 100%;
     padding: 50px 20px;
-    background: linear-gradient(45deg, #ff4b5c, #4b59f7, #1da1f2, #0077b5, #ff4500);
+    background: linear-gradient(45deg, #ff2f44, #dd37ec, #0b99f1, #021c2b, #e5ff00);
     background-size: 400% 400%;
     animation: gradientAnimation 7s ease infinite;
 }
