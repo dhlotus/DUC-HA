@@ -8,16 +8,68 @@
     --clr-neon: #14f7ff;
     --clr-bg: #001414;
     --font-size: 3rem;
-/* ng */
-    --card-height: 40vh;
-    --card-width: calc(car(var(var(--card-height))) / 1.5);
-    --bg: 25 28 41;
-    --color: 88 199 250;
 }
 h3{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
 }
+/* .head{
+    color: var(--clr-neon);
+    font-family: "Balsamiq Sans";
+    font-size: 2.4rem;
+    display: inline-block;
+    position: absolute;
+    top: 6%;
+    cursor: pointer;
+    border: var(--clr-neon), 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow: 
+        0 0 .20em #FFF7,
+        0 0 .30em var(--clr-neon);
+    box-shadow:
+        inset 0 0 .5em var(--clr-neon),
+              0 0 .5em var(--clr-neon);
+}
+.head::before{
+    content: " ";
+    position: absolute;
+    top: 130%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-neon);
+    transform: 
+        perspective(0.20em)
+        rotateX(10deg)
+        scale(1.3, 0.40);
+    filter: blur(0.5em);
+    opacity: 0,6;
+    pointer-events: none;
+    transition: opacity 100ms linear;
+}
+.head::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-neon);
+    box-shadow: 0 0 2em var(--clr-neon);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+.head:hover::after{
+    opacity: 1;
+}
+.head:hover, .head:focus {
+    color: white;
+}
+.head:hover::before{
+    opacity: 1;
+} */
 h1{
     font-family: 'Times New Roman', Times, serif;
     color: rgb(128, 26, 26);
@@ -58,7 +110,7 @@ h1::before{
 body{
     width: 100%;
     padding: 50px 20px;
-    background: linear-gradient(45deg, #311e20, #181c49, #09273a, #002336, #310d00);
+    background: linear-gradient(45deg, #ff4b5c, #4b59f7, #1da1f2, #0077b5, #ff4500);
     background-size: 400% 400%;
     animation: gradientAnimation 7s ease infinite;
 }
@@ -83,74 +135,17 @@ body {
 .container {
     position: absolute;
     text-align: center;
-    width: var(--card-width);
-    height: var(--card-height);
-    position: relative;
+    width: 90%;
     margin-top: 120px;
     margin-bottom: 70px;
     max-width: 400px;
     padding:50px;
     background-image: linear-gradient(pink, rgb(163, 117, 163), rgb(11, 110, 156));
-    border-radius: 20px;
+    border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
-@keyframes spin{
-    0%{
-        --rotate: 0deg;
-    }
-    100%{
-        --rotate: 360deg;
-    }
-}
-.container::before{
-    content: " ";
-    width: 104%;
-    height: 102.7%;
-    border-radius: 20px;
-    background-image: linear-gradient( 
-        var(--rotate),
-        #5ddcff,
-        #3c67e3,
-        #4e00c2
-    );
-    position: absolute;
-    z-index: -1;
-    top: -1.3%;
-    left: -2%;
-    animation: spin 2.5s linear infinite;
-}
-.container::after{
-    position: absolute;
-    content: "";
-    top: calc(var(--card-height) / 6);
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
-    background-image: linear-gradient(
-        var(--rotate),
-        #5ddcff,
-        #3c67e3,
-        #4e00c2
-    );
-    opacity: 1;
-    transition: opacity 0.5s;
-    animation: spin 2.5s linear infinite;
-}
-@property --rotate {
-    syntax: "<angle>";
-    initial-value: 132deg;
-    inherits: false;
-}
-.container:hover::before, 
-.container:hover::after {
-    animation: none;
-    opacity: 0;
-}
+
 /* Avatar */
 .avatar {
     width: 110px;
