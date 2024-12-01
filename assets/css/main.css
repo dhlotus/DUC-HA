@@ -25,7 +25,7 @@ body {
     animation: fadeIn 2s ease-in-out;
 }
 .header__page {
-    font-size: 4.8rem;
+    font-size: 4.6rem;
     text-shadow: 0 0 10px #dae76d;
     top: 0%;
     user-select: none;
