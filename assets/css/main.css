@@ -7,6 +7,9 @@
 html {
     font-size: 62.5%;
 }
+.eror {
+    display: block;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(135deg, #ff7eb3, #65c7f7, #0052d4);
@@ -19,6 +22,13 @@ body {
     overflow: hidden;
 }
 /* main */
+/* .web {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+} */
 .header {
     margin-top: 24px;
     font-weight: bold;
