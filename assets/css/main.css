@@ -1,0 +1,102 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #ff7eb3, #65c7f7, #0052d4);
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+}
+/* main */
+.header {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #dae76d;
+    user-select: none;
+    margin-top: 24px;
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar {
+    width: 240px;
+    height: 240px;
+    margin-top: 100px;
+    background: url('../img/logo.png') no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    animation: float 2s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.social--link {
+    display: flex;
+    position: relative;
+    gap: 30px;
+    top: 50px;
+    align-items: center;
+}
+.social--link__item {
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+.social--link__item:hover .social--link__item--logo{
+    transform: scale(1.12);
+    border: 1px solid rgb(197, 149, 157);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(226, 171, 180);
+}
+.social--link__item:hover .social--link__item--logo--zalo {
+    border-radius: 26%;
+}
+.social--link__item--logo {
+    width: 50px;
+    height: 50px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    top: 20px;
+}
+.footer__page {
+    position: absolute;
+    bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--black-color);
+}
