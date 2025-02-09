@@ -12,14 +12,21 @@
 </head>
     <!-- separate -->
 <body>
+    
+    <!-- particles -->
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
     <header class="header">
         <h2 class="header__page" translate="no">LOTUS</h2>
     </header>
+
         <!-- container -->
     <div class="container">
+        
         <div class="avatar"></div>
             <!-- LINK -->
-        <div class="social--link ">
+        <!-- <div class="social--link ">
             <a href="https://www.facebook.com/bdh.lotus/" class="social--link__item ">
                 <img class="sdow_box social--link__item--logo " src="./assets/img/Facebook_Logo_(2019).png.webp " alt="Logo facebook">
             </a>
@@ -29,7 +36,34 @@
             <a href="https://zalo.me/0332426909" class="social--link__item">
                 <img class="sdow_box social--link__item--logo social--link__item--logo--zalo" src="./assets/img/Zalo.png" alt="Logo zalo">
             </a>
-        </div>
+        </div> -->
+        <div class="link-bars">
+            <a href="https://www.facebook.com/bdh.lotus/" class="bar">
+              <div class="logo">
+                <img src="/assets/img/Facebook_Logo_(2019).png.webp" alt="Facebook">
+              </div>
+              <div class="text">Facebook</div>
+            </a>
+            <a href="https://www.tiktok.com/@_sgbdha__" class="bar">
+              <div class="logo">
+                <img src="/assets/img/tiktok.png">
+              </div>
+              <div class="text">TikTok</div>
+            </a>
+            <a href="https://zalo.me/0332426909" class="bar">
+              <div class="logo">
+                <img src="/assets/img/Zalo.png" alt="Zalo">
+              </div>
+              <div class="text">Zalo</div>
+            </a>
+          </div>
+        <!-- <div class="circle-container">
+            <div class="circle"></div>
+            <div class="circle"></div>  tròn phát sáng
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>  -->
+          
     </div>
         <!-- FOOTER -->
     <footer class="footer">
@@ -38,28 +72,6 @@
             DH LOTUS-SVRl 2024
         </p>
     </footer>
-    <script>
-        document.addEventListener('contextmenu', function(event) {
-            event.preventDefault();
-        });
-    
-        document.addEventListener('keydown', function(event) {
-            if (event.key === "F12" || 
-                (event.ctrlKey && event.shiftKey && event.key === "I") ||  
-                (event.ctrlKey && event.shiftKey && event.key === "J") ||  
-                (event.ctrlKey && event.key === "U") 
-               ) {
-                event.preventDefault(); 
-            }
-        });
-        // u
-        document.addEventListener('keydown', function (event) {
-        if (event.ctrlKey && event.key.toLowerCase() === 'u') {
-            event.preventDefault(); 
-            return false; 
-        }
-        });
-    </script>
     <noscript>
         <style>
             body {
@@ -67,5 +79,7 @@
             }
         </style>
     </noscript>
+    <script src="main.js"></script>
+    
 </body>
 </html>
