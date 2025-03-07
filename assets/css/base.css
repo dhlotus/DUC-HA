@@ -1,4 +1,35 @@
 :root {
-    --black-color: #000;
-    --while-color: #fff;
+    --primary: #6366f1;
+    --primary-light: #8896ff;
+    --primary-dark: #4f46e5;
+    --secondary: #c084fc;
+    --background: #f8fafc;
+    --foreground: #1e293b;
+    --muted: #64748b;
+    --muted-foreground: #94a3b8;
+    --border: #e2e8f0;
+    --input: #e2e8f0;
+    --ring: #cbd5e1;
+    --radius: 0.5rem;
+}
+/* Toàn bộ scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Phần track (nền sau thanh cuộn) */
+::-webkit-scrollbar-track {
+    background: #ececec;
+    border-radius: 10px;
+}
+
+/* Phần thumb (thanh trượt) */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    border-radius: 10px;
+}
+
+/* Hover vào thanh trượt */
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #f06595, #cc5de8);
 }
