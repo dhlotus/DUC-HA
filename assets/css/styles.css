@@ -882,7 +882,18 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: flex-start;
   }
 }
-
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .hero-content{
+    margin-top: 5%;
+  }
+  .hero-lotus-logo {
+    width: 160px;
+    height: 160px;
+  }
+  .none-lt {
+    display: none;
+  }
+}
 .icon-heart {
   color: #ef4444;
   width: 18px;
