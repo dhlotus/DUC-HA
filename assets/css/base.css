@@ -33,3 +33,72 @@
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(45deg, #f06595, #cc5de8);
 }
+
+@media (min-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 768px) {
+    .social-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    .buddhism-content {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+}
+@media (min-width: 768px) {
+    .idols-container {
+      flex-direction: row;
+    }
+}
+@media (min-width: 768px) {
+    .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+      align-items: flex-start;
+    }
+}
+@media (min-width: 768px) {
+    .footer-credits {
+      justify-content: flex-start;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .hero-content{
+      margin-top: 5%;
+    }
+    .hero-lotus-logo {
+      width: 160px;
+      height: 160px;
+    }
+    .none-lt {
+      display: none;
+    }
+} 
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-title {
+      font-size: 2.5rem;
+    }
+    
+    .hero-description {
+      font-size: 1rem;
+    }
+    
+    .section-heading {
+      font-size: 2rem;
+    }
+    
+    .main-nav {
+      display: none;
+    }
+  }
+
+
+  
+
